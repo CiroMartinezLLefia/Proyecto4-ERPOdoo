@@ -1,0 +1,9 @@
+id,name,list_price,detailed_type,description_sale,categ_id
+mydreamplace_hotel_1,Lakeside Resort & Cabins - Queenstown (Nova Zelanda),180.00,service,"Allotjament a Lakeside Resort & Cabins, Queenstown, Nova Zelanda. Preu per nit. Valoració: 4.8/5 (124 ressenyes).",Todos / Servicios
+mydreamplace_hotel_2,Chiba Onsen & Spa - Tòquio (Japó),240.00,service,"Allotjament a Chiba Onsen & Spa, Tòquio, Japó. Preu per nit. Valoració: 4.9/5 (89 ressenyes).",Todos / Servicios
+mydreamplace_hotel_3,Santorini Heights Cave Suites - Imerovigli (Grècia),320.00,service,"Allotjament de luxe a Santorini Heights Cave Suites, Imerovigli, Grècia. Preu per nit. Valoració: 4.7/5 (215 ressenyes).",Todos / Servicios
+mydreamplace_hotel_4,The Darling Hotel & Suites - Sydney (Austràlia),290.00,service,"Allotjament de luxe a The Darling Hotel & Suites, Sydney, Austràlia. Preu per nit. Valoració: 4.9/5 (310 ressenyes).",Todos / Servicios
+mydreamplace_pack_australia,Paquet Viatge a Austràlia (Sydney),1200.00,service,"Paquet complet de viatge a Sydney, Austràlia. Inclou vols, allotjament a The Darling Hotel i activitats guiades.",Todos / Servicios
+mydreamplace_pack_japan,Paquet Viatge a Japó (Tòquio i Kyoto),1500.00,service,"Paquet de viatge a Japó. Descobreix la combinació de tradició i modernitat a Tòquio i Kyoto amb allotjament Onsen inclòs.",Todos / Servicios
+mydreamplace_pack_greece,Paquet Viatge a Grècia (Atenes i Santorini),980.00,service,"Paquet de viatge a Grècia. Gaudeix de la història d'Atenes i les coves/vistes de Santorini Heights.",Todos / Servicios
+mydreamplace_pack_nz,Paquet Viatge a Nova Zelanda (Aventures),1800.00,service,"Paquet de viatge d'aventura a Nova Zelanda. Inclou esports d'aventura a Queenstown i estada a Lakeside Resort.",Todos / Servicios

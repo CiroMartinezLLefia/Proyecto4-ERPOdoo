@@ -1,0 +1,6 @@
+id,name,email,phone,street,city,country_id/id,is_company
+mydreamplace_client_1,Joan Garcia Perez,joan.garcia@example.com,+34 600 123 456,Carrer de Mallorca 12,Barcelona,base.es,false
+mydreamplace_client_2,Marta Rodriguez Sole,marta.rodriguez@example.com,+34 650 987 654,Avinguda Diagonal 450,Barcelona,base.es,false
+mydreamplace_client_3,David Almonacid Ruiz,david.almonacid@example.com,+34 610 246 810,Gran Via de les Corts Catalanes 580,Barcelona,base.es,false
+mydreamplace_client_4,Laura Sanchez Martin,laura.sanchez@example.com,+34 620 555 444,Calle Mayor 14,Madrid,base.es,false
+mydreamplace_client_5,Travel Agency Global S.L.,info@travelglobal.com,+34 932 111 222,Passeig de Gracia 80,Barcelona,base.es,true

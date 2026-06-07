@@ -653,6 +653,153 @@ body {
 }
 
 /* ----------------------------------------------------
+   IMPORT DATA CARDS & RESOURCES
+------------------------------------------------------- */
+.import-card {
+    background: linear-gradient(135deg, rgba(30, 24, 46, 0.7) 0%, rgba(18, 14, 28, 0.7) 100%);
+    border: 1px solid var(--border-glass-active);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin-bottom: 4rem;
+    backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-main), 0 0 15px rgba(143, 95, 166, 0.1);
+}
+
+.import-badge {
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    border-radius: 100px;
+    background: rgba(234, 179, 8, 0.1);
+    border: 1px solid rgba(234, 179, 8, 0.25);
+    color: #eab308;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.25rem;
+}
+
+.import-card-header h2 {
+    font-family: var(--font-heading);
+    font-size: 1.85rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.import-card-header p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    max-width: 900px;
+    margin-bottom: 2rem;
+}
+
+.import-files-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.import-file-box {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    padding: 1.75rem;
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    transition: var(--transition-smooth);
+}
+
+.import-file-box:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(145, 115, 214, 0.25);
+    transform: translateY(-2px);
+}
+
+.file-icon {
+    font-size: 2.25rem;
+    background: rgba(113, 99, 158, 0.15);
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.file-details h3 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.file-details p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+}
+
+.btn-import {
+    display: inline-block;
+    background: var(--accent-odoo);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 0.6rem 1.25rem;
+    border-radius: 8px;
+    transition: var(--transition-fast);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-import:hover {
+    background: var(--accent-violet);
+    box-shadow: 0 4px 15px rgba(113, 99, 158, 0.4);
+    transform: translateY(-1px);
+}
+
+.import-instructions {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    padding: 2rem;
+}
+
+.import-instructions h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.import-instructions ol {
+    padding-left: 1.25rem;
+    color: var(--text-secondary);
+}
+
+.import-instructions li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.import-instructions li strong {
+    color: var(--text-primary);
+}
+
+.import-instructions li code {
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+    color: var(--accent-light);
+}
+
+/* ----------------------------------------------------
    RESPONSIVENESS (MEDIA QUERIES)
 ------------------------------------------------------- */
 @media (max-width: 1024px) {
@@ -722,6 +869,23 @@ body {
         gap: 1rem;
         flex-direction: column;
         align-items: center;
+    }
+    
+    .import-card {
+        padding: 1.5rem 1rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .import-files-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .import-file-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
     }
     
     .step-card {
