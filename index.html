@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecte 4 - ERP amb Odoo | My Dream Place</title>
+    
+    <!-- Google Fonts: Outfit (headings) and Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Sparkle background effects -->
+    <div class="glow-bg"></div>
+
+    <!-- Main Container -->
+    <main class="app-container">
+        
+        <!-- Hero Header -->
+        <header class="hero">
+            <div class="hero-badge">Projecte 4 · ERP Odoo</div>
+            <h1>Documentació de l'ERP amb Odoo</h1>
+            <p class="hero-subtitle">
+                Configuració i posada en marxa per a l'agència de viatges i allotjaments <span>My Dream Place</span> (basat en el Projecte 2).
+            </p>
+            <div class="hero-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Estudiant:</span>
+                    <span class="meta-val">Ciro Martínez</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Mòdul:</span>
+                    <span class="meta-val">IA10 - ERP</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Estat:</span>
+                    <span class="meta-badge">Fase 1: Registre i Inici</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Project Intro -->
+        <section class="intro-card">
+            <h2>Objectiu del Projecte</h2>
+            <p>
+                Aquest projecte consisteix en la creació d'un compte a <strong>Odoo</strong> per muntar i simular la gestió empresarial d'una agència de viatges inspirada en <em>My Dream Place</em>. Es configuraran mòduls clau com CRM, Vendes, Facturació, Contactes, entre d'altres, introduint dades de prova per provar el flux complet de treball. Aquesta SPA documenta pas a pas la configuració inicial realitzada fins al moment.
+            </p>
+        </section>
+
+        <!-- Dynamic Content Layout (Sidebar Tracker + Timeline Scroll) -->
+        <div class="content-layout">
+            
+            <!-- Floating Timeline Progress Indicator (No navbar, simple visual guide) -->
+            <aside class="sidebar-tracker">
+                <div class="tracker-title">Passos de Configuració</div>
+                <nav class="tracker-steps">
+                    <a href="#paso-1" class="tracker-step-link active" data-step="1">
+                        <span class="step-dot"></span>
+                        <span class="step-name">1. Perfil d'Usuari</span>
+                    </a>
+                    <a href="#paso-2" class="tracker-step-link" data-step="2">
+                        <span class="step-dot"></span>
+                        <span class="step-name">2. Selecció d'Apps</span>
+                    </a>
+                    <a href="#paso-3" class="tracker-step-link" data-step="3">
+                        <span class="step-dot"></span>
+                        <span class="step-name">3. Dades de l'Empresa</span>
+                    </a>
+                    <a href="#paso-4" class="tracker-step-link" data-step="4">
+                        <span class="step-dot"></span>
+                        <span class="step-name">4. Objectiu de Negoci</span>
+                    </a>
+                    <a href="#paso-5" class="tracker-step-link" data-step="5">
+                        <span class="step-dot"></span>
+                        <span class="step-name">5. Paleta de Colors</span>
+                    </a>
+                    <a href="#paso-6" class="tracker-step-link" data-step="6">
+                        <span class="step-dot"></span>
+                        <span class="step-name">6. Catàleg Online</span>
+                    </a>
+                    <a href="#paso-7" class="tracker-step-link" data-step="7">
+                        <span class="step-dot"></span>
+                        <span class="step-name">7. Pàgina de Producte</span>
+                    </a>
+                    <a href="#paso-8" class="tracker-step-link" data-step="8">
+                        <span class="step-dot"></span>
+                        <span class="step-name">8. Disseny de Portada</span>
+                    </a>
+                </nav>
+            </aside>
+
+            <!-- Steps Feed -->
+            <div class="steps-feed">
+                
+                <!-- Step 1 -->
+                <section id="paso-1" class="step-card" data-step="1">
+                    <div class="step-header">
+                        <div class="step-number">Pas 01</div>
+                        <h2>Creació del Compte d'Odoo</h2>
+                    </div>
+                    <div class="step-body">
+                        <p class="step-description">
+                            Primer pas per al muntatge del programari de gestió empresarial. S'ha realitzat el registre a la plataforma oficial d'Odoo, creant el perfil d'usuari personal amb accés a la consola d'administració (Partner Portal).
+                        </p>
+                        
+                        <div class="image-wrapper">
+                            <img src="img/01_cuenta_odoo.png" alt="Perfil d'usuari a Odoo - MartinezCiro" class="step-image">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍 Ampliar Captura</span>
+                            </div>
+                        </div>
+
+                        <div class="step-highlights">
+                            <div class="highlight-item">
+                                <strong>Correu utilitzat:</strong> <code>martinezmartinciro@fpllefia.com</code>
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Regió activa:</strong> Barcelona, Espanya
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Step 2 -->
+                <section id="paso-2" class="step-card" data-step="2">
+                    <div class="step-header">
+                        <div class="step-number">Pas 02</div>
+                        <h2>Selecció d'Aplicacions</h2>
+                    </div>
+                    <div class="step-body">
+                        <p class="step-description">
+                            Selecció del primer mòdul d'entrada. Triem l'aplicació de <strong>Comercio electrónico (eCommerce)</strong> per començar, la qual ens permetrà configurar l'agència de viatges per a la venda de paquets i reserves en línia de forma directa.
+                        </p>
+                        
+                        <div class="image-wrapper">
+                            <img src="img/02_seleccion_apps.png" alt="Selecció d'aplicacions a Odoo" class="step-image">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍 Ampliar Captura</span>
+                            </div>
+                        </div>
+
+                        <div class="step-notes">
+                            <p><strong>Nota:</strong> Odoo permet arrencar de forma completament gratuïta si se selecciona una sola aplicació inicial. Més endavant podrem activar i interconnectar la resta de mòduls requerits com CRM, Vendes, Contactes i Facturació.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Step 3 -->
+                <section id="paso-3" class="step-card" data-step="3">
+                    <div class="step-header">
+                        <div class="step-number">Pas 03</div>
+                        <h2>Registre i Configuració de l'Empresa</h2>
+                    </div>
+                    <div class="step-body">
+                        <p class="step-description">
+                            Introducció de les dades bàsiques de la nostra empresa de viatges. S'assigna el nom del projecte i es crea el subdomini d'accés a Odoo per a la nostra agència de reserves.
+                        </p>
+                        
+                        <div class="image-wrapper">
+                            <img src="img/03_datos_empresa.png" alt="Registre i dades del lloc a Odoo" class="step-image">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍 Ampliar Captura</span>
+                            </div>
+                        </div>
+
+                        <div class="step-highlights">
+                            <div class="highlight-item">
+                                <strong>Nom del lloc web:</strong> My Dream Place
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Domini assignat:</strong> <code>my-dream-place.odoo.com</code>
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Idioma / País:</strong> Español / España
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Step 4 -->
+                <section id="paso-4" class="step-card" data-step="4">
+                    <div class="step-header">
+                        <div class="step-number">Pas 04</div>
+                        <h2>Definició de l'Objectiu de Negoci</h2>
+                    </div>
+                    <div class="step-body">
+                        <p class="step-description">
+                            Completant l'assistent interactiu d'arrencada d'Odoo. Seleccionem el sector adequat (<strong>Agencia de viajes</strong>) i definim que el nostre objectiu principal és la venda directa online (<strong>vender más</strong>).
+                        </p>
+                        
+                        <div class="image-wrapper">
+                            <img src="img/04_config_objetivo.png" alt="Definició d'objectius en l'assistent d'Odoo" class="step-image">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍 Ampliar Captura</span>
+                            </div>
+                        </div>
+
+                        <div class="step-notes">
+                            <p>Aquesta elecció ajuda a Odoo a carregar un formulari d'incorporació especialitzat amb categories de productes per a viatges, allotjaments i activitats.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Step 5 -->
+                <section id="paso-5" class="step-card" data-step="5">
+                    <div class="step-header">
+                        <div class="step-number">Pas 05</div>
+                        <h2>Selecció del Disseny i Paleta de Colors</h2>
+                    </div>
+                    <div class="step-body">
+                        <p class="step-description">
+                            Darrer pas de l'assistent d'inicialització. Triem una paleta de colors que s'ajusti a l'estètica elegant i professional de la nostra agència de viatges. També s'ofereix la possibilitat de pujar el nostre logo per extreure els tons de marca directament.
+                        </p>
+                        
+                        <div class="image-wrapper">
+                            <img src="img/05_config_colores.png" alt="Paleta de colors per al lloc d'Odoo" class="step-image">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍 Ampliar Captura</span>
+                            </div>
+                        </div>
+
+                        <div class="step-notes">
+                            <p><strong>Següent fase:</strong> Un cop seleccionat el disseny bàsic, Odoo generarà l'estructura inicial de la base de dades de l'ERP i del lloc web eCommerce per començar a introduir els nostres paquets turístics.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Step 6 -->
+                <section id="paso-6" class="step-card" data-step="6">
+                    <div class="step-header">
+                        <div class="step-number">Pas 06</div>
+                        <h2>Plantilla del Catàleg Online</h2>
+                    </div>
+                    <div class="step-body">
+                        <p class="step-description">
+                            Configuració de l'estructura de visualització de productes. Odoo ofereix diferents plantilles per al llistat de productes (Cuadrícula clásica, Cuadrícula moderna, Exhibición, Minimal Cards, Lista compacta, Visual Cards). Seleccionem el format visual per mostrar els nostres packs de viatge i allotjaments d'una manera intuïtiva.
+                        </p>
+                        
+                        <div class="image-wrapper">
+                            <img src="img/06_catalogo_template.png" alt="Elecció de la plantilla del catàleg en línia" class="step-image">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍 Ampliar Captura</span>
+                            </div>
+                        </div>
+
+                        <div class="step-notes">
+                            <p><strong>Nota de disseny:</strong> La plantilla "Visual Cards" o "Exhibición" és ideal per a agències de viatges, ja que prioritza les fotografies a gran resolució dels destins turístics.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Step 7 -->
+                <section id="paso-7" class="step-card" data-step="7">
+                    <div class="step-header">
+                        <div class="step-number">Pas 07</div>
+                        <h2>Plantilla de Detall del Producte</h2>
+                    </div>
+                    <div class="step-body">
+                        <p class="step-description">
+                            Definició del disseny de la fitxa detallada de cada producte. Triem la distribució de la informació (Clásico, Cuadrícula de imágenes, Showcase Grid, Con enfoque, Funcional, Imagen grande), de manera que determinem com es veuran les fotos, preus, botó de reserva i especificacions del viatge.
+                        </p>
+                        
+                        <div class="image-wrapper">
+                            <img src="img/07_producto_template.png" alt="Elecció del disseny de la pàgina de producte" class="step-image">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍 Ampliar Captura</span>
+                            </div>
+                        </div>
+
+                        <div class="step-notes">
+                            <p>Per a un lloc web de viatges, la plantilla "Imagen grande" o "Cuadrícula de imágenes" permet que l'usuari s'involucri emocionalment amb les imatges del destí/hotel abans d'iniciar el flux de reserva.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Step 8 -->
+                <section id="paso-8" class="step-card" data-step="8">
+                    <div class="step-header">
+                        <div class="step-number">Pas 08</div>
+                        <h2>Selecció del Tema Favorit i Portada</h2>
+                    </div>
+                    <div class="step-body">
+                        <p class="step-description">
+                            Elecció final de la maquetació de la pàgina de benvinguda (Landing Page). Escollim el tema preconfigurat per Odoo que millor s'adapta a la imatge corporativa de <em>My Dream Place</em>, per tal de procedir amb la instal·lació i creació final del lloc de reserves.
+                        </p>
+                        
+                        <div class="image-wrapper">
+                            <img src="img/08_home_tema.png" alt="Selecció del tema favorit per a la pàgina de benvinguda" class="step-image">
+                            <div class="image-overlay">
+                                <span class="zoom-icon">🔍 Ampliar Captura</span>
+                            </div>
+                        </div>
+
+                        <div class="step-highlights">
+                            <div class="highlight-item">
+                                <strong>Acció final:</strong> Previsualitzar o fer clic a "Empezar ahora" / "Ver más temas".
+                            </div>
+                            <div class="highlight-item">
+                                <strong>Integració de mòduls:</strong> L'assistent activa a continuació la base de dades Odoo i vincula el lloc web amb el CRM i Facturació.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>© 2026 Ciro Martínez - Practicas DAW | Projecte 4: ERP amb Odoo</p>
+    </footer>
+
+    <!-- Interactive Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-nav lightbox-prev" aria-label="Anterior">&lsaquo;</button>
+        
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Captura ampliada">
+            <div id="lightbox-caption">Títol de la captura</div>
+        </div>
+
+        <button class="lightbox-nav lightbox-next" aria-label="Següent">&rsaquo;</button>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="main.js"></script>
+</body>
+</html>
