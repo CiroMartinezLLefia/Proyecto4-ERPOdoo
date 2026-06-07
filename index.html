@@ -44,7 +44,7 @@
                 </div>
                 <div class="meta-item">
                     <span class="meta-label">Estat:</span>
-                    <span class="meta-badge">Fase 1: Registre i Inici</span>
+                    <span class="meta-badge">Fase: Completat</span>
                 </div>
             </div>
         </header>
@@ -105,9 +105,11 @@
                         clients).</li>
                     <li>A la part superior dreta de la llista (a l'esquerra del filtre), fes clic a
                         <strong>Favoritos</strong> (o l'icona d'ajust/filtre) i selecciona <strong>Importar
-                            registros</strong>.</li>
+                            registros</strong>.
+                    </li>
                     <li>Puja el fitxer CSV descarregat. Odoo detectarà i maparà automàticament els camps (per exemple,
-                        <code>id</code>, <code>name</code>, <code>list_price</code>).</li>
+                        <code>id</code>, <code>name</code>, <code>list_price</code>).
+                    </li>
                     <li>Fes clic al botó <strong>Prueba</strong> (Test) per validar que les dades s'ajustin al teu ERP.
                         Quan surti el missatge "Todo parece correcto" en verd, prem <strong>Importar</strong>. ¡I ja
                         tindràs tota la base de dades a punt!</li>
@@ -450,11 +452,16 @@
                     </div>
                     <div class="step-body">
                         <p class="step-description">
-                            Verificació de les aplicacions d'Odoo configurades al nostre entorn empresarial. Un cop completat l'assistent d'inici, s'han activat i interconnectat amb èxit els mòduls clau de gestió: <strong>Facturación</strong>, <strong>CRM</strong>, <strong>Sitio web</strong>, <strong>Comercio electrónico</strong>, <strong>Contactos</strong>, i <strong>Conversaciones</strong>.
+                            Verificació de les aplicacions d'Odoo configurades al nostre entorn empresarial. Un cop
+                            completat l'assistent d'inici, s'han activat i interconnectat amb èxit els mòduls clau de
+                            gestió: <strong>Facturación</strong>, <strong>CRM</strong>, <strong>Sitio web</strong>,
+                            <strong>Comercio electrónico</strong>, <strong>Contactos</strong>, i
+                            <strong>Conversaciones</strong>.
                         </p>
-                        
+
                         <div class="image-wrapper">
-                            <img src="img/09_modulos_instalados.png" alt="Tauler d'aplicacions instal·lades a Odoo" class="step-image">
+                            <img src="img/09_modulos_instalados.png" alt="Tauler d'aplicacions instal·lades a Odoo"
+                                class="step-image">
                             <div class="image-overlay">
                                 <span class="zoom-icon">🔍 Ampliar Captura</span>
                             </div>
@@ -479,11 +486,15 @@
                     </div>
                     <div class="step-body">
                         <p class="step-description">
-                            Carrega massiva de dades de productes mitjançant l'assistent d'importació. Es penja el fitxer <code>productos_mydreamplace.csv</code>. L'assistent d'Odoo analitza la capçalera del fitxer i realitza automàticament la correspondència entre els camps del fitxer (preus, descripcions, noms) i els camps del model de dades d'Odoo.
+                            Carrega massiva de dades de productes mitjançant l'assistent d'importació. Es penja el
+                            fitxer <code>productos_mydreamplace.csv</code>. L'assistent d'Odoo analitza la capçalera del
+                            fitxer i realitza automàticament la correspondència entre els camps del fitxer (preus,
+                            descripcions, noms) i els camps del model de dades d'Odoo.
                         </p>
-                        
+
                         <div class="image-wrapper">
-                            <img src="img/10_importar_productos.png" alt="Pantalla de mapeig de camps per a l'importació de productes" class="step-image">
+                            <img src="img/10_importar_productos.png"
+                                alt="Pantalla de mapeig de camps per a l'importació de productes" class="step-image">
                             <div class="image-overlay">
                                 <span class="zoom-icon">🔍 Ampliar Captura</span>
                             </div>
@@ -491,7 +502,8 @@
 
                         <div class="step-highlights">
                             <div class="highlight-item">
-                                <strong>Camps mapats:</strong> ID Externo (id), Nombre (name), Precio de venta (list_price), Descripción de ventas (description_sale).
+                                <strong>Camps mapats:</strong> ID Externo (id), Nombre (name), Precio de venta
+                                (list_price), Descripción de ventas (description_sale).
                             </div>
                             <div class="highlight-item">
                                 <strong>Tipus de producte:</strong> Configurat com a Servei per a reserves.
@@ -508,18 +520,24 @@
                     </div>
                     <div class="step-body">
                         <p class="step-description">
-                            Carrega de clients ficticis per simular vendes i CRM. Es penja el fitxer <code>clientes_mydreamplace.csv</code>. Odoo maparà els noms, correus electrònics, telèfons, adreces i països dels nostres clients, reconeixent automàticament les persones de les empreses gràcies a la columna <code>is_company</code>.
+                            Carrega de clients ficticis per simular vendes i CRM. Es penja el fitxer
+                            <code>clientes_mydreamplace.csv</code>. Odoo maparà els noms, correus electrònics, telèfons,
+                            adreces i països dels nostres clients, reconeixent automàticament les persones de les
+                            empreses gràcies a la columna <code>is_company</code>.
                         </p>
-                        
+
                         <div class="image-wrapper">
-                            <img src="img/11_importar_clientes.png" alt="Pantalla de mapeig de camps per a l'importació de contactes" class="step-image">
+                            <img src="img/11_importar_clientes.png"
+                                alt="Pantalla de mapeig de camps per a l'importació de contactes" class="step-image">
                             <div class="image-overlay">
                                 <span class="zoom-icon">🔍 Ampliar Captura</span>
                             </div>
                         </div>
 
                         <div class="step-notes">
-                            <p><strong>Dada interessant:</strong> El camp <code>country_id/id</code> utilitza el codi estàndard d'Odoo <code>base.es</code> per associar directament el país Espanya, estalviant errors de picat manuals.</p>
+                            <p><strong>Dada interessant:</strong> El camp <code>country_id/id</code> utilitza el codi
+                                estàndard d'Odoo <code>base.es</code> per associar directament el país Espanya,
+                                estalviant errors de picat manuals.</p>
                         </div>
                     </div>
                 </section>
@@ -532,11 +550,14 @@
                     </div>
                     <div class="step-body">
                         <p class="step-description">
-                            Confirmació visual del llistat de contactes. Un cop finalitzat el procés d'importació, la base de dades conté els nous contactes (com Joan Garcia, David Almonacid, o l'agència de viatges Travel Agency Global S.L.) llestos per rebre pressupostos i factures.
+                            Confirmació visual del llistat de contactes. Un cop finalitzat el procés d'importació, la
+                            base de dades conté els nous contactes (com Joan Garcia, David Almonacid, o l'agència de
+                            viatges Travel Agency Global S.L.) llestos per rebre pressupostos i factures.
                         </p>
-                        
+
                         <div class="image-wrapper">
-                            <img src="img/12_lista_clientes.png" alt="Llista de contactes importats a Odoo" class="step-image">
+                            <img src="img/12_lista_clientes.png" alt="Llista de contactes importats a Odoo"
+                                class="step-image">
                             <div class="image-overlay">
                                 <span class="zoom-icon">🔍 Ampliar Captura</span>
                             </div>
@@ -561,11 +582,15 @@
                     </div>
                     <div class="step-body">
                         <p class="step-description">
-                            Vista general del catàleg en Odoo (vista Kanban). Els 4 hotels i els 4 paquets turístics extrets de <em>myDreamPlace</em> s'han inserit amb èxit. S'observen els preus i el format de targeta de serveis, preparats per a la venda a la botiga en línia o a través del tauler comercial de Vendes.
+                            Vista general del catàleg en Odoo (vista Kanban). Els 4 hotels i els 4 paquets turístics
+                            extrets de <em>myDreamPlace</em> s'han inserit amb èxit. S'observen els preus i el format de
+                            targeta de serveis, preparats per a la venda a la botiga en línia o a través del tauler
+                            comercial de Vendes.
                         </p>
-                        
+
                         <div class="image-wrapper">
-                            <img src="img/13_lista_productos.png" alt="Llista en quadrícula de productes importats a Odoo" class="step-image">
+                            <img src="img/13_lista_productos.png"
+                                alt="Llista en quadrícula de productes importats a Odoo" class="step-image">
                             <div class="image-overlay">
                                 <span class="zoom-icon">🔍 Ampliar Captura</span>
                             </div>
@@ -573,10 +598,12 @@
 
                         <div class="step-highlights">
                             <div class="highlight-item">
-                                <strong>Productes importats:</strong> Chiba Onsen, Lakeside Resort, Santorini Cave, The Darling i els packs regionals.
+                                <strong>Productes importats:</strong> Chiba Onsen, Lakeside Resort, Santorini Cave, The
+                                Darling i els packs regionals.
                             </div>
                             <div class="highlight-item">
-                                <strong>Integració de preus:</strong> Preus de venda correctament assignats (de 180 € fins a 190.000 € per als viatges llargs).
+                                <strong>Integració de preus:</strong> Preus de venda correctament assignats (de 180 €
+                                fins a 190.000 € per als viatges llargs).
                             </div>
                         </div>
                     </div>
@@ -590,11 +617,14 @@
                     </div>
                     <div class="step-body">
                         <p class="step-description">
-                            Inici del flux comercial de l'agència de viatges. Es genera un nou pressupost de prova per al client <strong>David Almonacid Ruiz</strong>, configurant-ne les dates de venciment, la data de lliurament del servei i les condicions de pagament immediat.
+                            Inici del flux comercial de l'agència de viatges. Es genera un nou pressupost de prova per
+                            al client <strong>David Almonacid Ruiz</strong>, configurant-ne les dates de venciment, la
+                            data de lliurament del servei i les condicions de pagament immediat.
                         </p>
-                        
+
                         <div class="image-wrapper">
-                            <img src="img/14_crear_presupuesto.png" alt="Creació d'un nou pressupost per a client" class="step-image">
+                            <img src="img/14_crear_presupuesto.png" alt="Creació d'un nou pressupost per a client"
+                                class="step-image">
                             <div class="image-overlay">
                                 <span class="zoom-icon">🔍 Ampliar Captura</span>
                             </div>
@@ -619,11 +649,15 @@
                     </div>
                     <div class="step-body">
                         <p class="step-description">
-                            Configuració visual de la documentació que rebrà el client. Odoo disposa d'un editor de plantilles per determinar l'estil (Light, Bubble, Wave, Folder, Center, Dual, Lines), la font, el logotip, els colors de la marca i el peu de pàgina de la factura o pressupost en format PDF.
+                            Configuració visual de la documentació que rebrà el client. Odoo disposa d'un editor de
+                            plantilles per determinar l'estil (Light, Bubble, Wave, Folder, Center, Dual, Lines), la
+                            font, el logotip, els colors de la marca i el peu de pàgina de la factura o pressupost en
+                            format PDF.
                         </p>
-                        
+
                         <div class="image-wrapper">
-                            <img src="img/15_diseno_documento.png" alt="Pantalla de personalització visual de pressupostos en PDF" class="step-image">
+                            <img src="img/15_diseno_documento.png"
+                                alt="Pantalla de personalització visual de pressupostos en PDF" class="step-image">
                             <div class="image-overlay">
                                 <span class="zoom-icon">🔍 Ampliar Captura</span>
                             </div>
@@ -648,11 +682,15 @@
                     </div>
                     <div class="step-body">
                         <p class="step-description">
-                            Flux de comunicació automatitzat amb el client. Es mostra la finestra de redacció de correus d'Odoo amb la plantilla predefinida en espanyol, adjuntant automàticament el pressupost en format PDF (<code>Presupuesto-S00001.pdf</code>) per a la seva revisió.
+                            Flux de comunicació automatitzat amb el client. Es mostra la finestra de redacció de correus
+                            d'Odoo amb la plantilla predefinida en espanyol, adjuntant automàticament el pressupost en
+                            format PDF (<code>Presupuesto-S00001.pdf</code>) per a la seva revisió.
                         </p>
-                        
+
                         <div class="image-wrapper">
-                            <img src="img/16_enviar_presupuesto.png" alt="Finestra d'enviament de correu electrònic amb pressupost adjunt" class="step-image">
+                            <img src="img/16_enviar_presupuesto.png"
+                                alt="Finestra d'enviament de correu electrònic amb pressupost adjunt"
+                                class="step-image">
                             <div class="image-overlay">
                                 <span class="zoom-icon">🔍 Ampliar Captura</span>
                             </div>
@@ -677,11 +715,16 @@
                     </div>
                     <div class="step-body">
                         <p class="step-description">
-                            Confirmació de l'enviament. L'estat de la venda canvia a <strong>Presupuesto enviado</strong>. A la banda dreta (Chatter o Historial de missatges), queda registrat el correu enviat al client i la miniatura del document PDF per garantir el seguiment comercial.
+                            Confirmació de l'enviament. L'estat de la venda canvia a <strong>Presupuesto
+                                enviado</strong>. A la banda dreta (Chatter o Historial de missatges), queda registrat
+                            el correu enviat al client i la miniatura del document PDF per garantir el seguiment
+                            comercial.
                         </p>
-                        
+
                         <div class="image-wrapper">
-                            <img src="img/17_presupuesto_enviado.png" alt="Vista de pressupost en estat enviat amb historial en panell lateral" class="step-image">
+                            <img src="img/17_presupuesto_enviado.png"
+                                alt="Vista de pressupost en estat enviat amb historial en panell lateral"
+                                class="step-image">
                             <div class="image-overlay">
                                 <span class="zoom-icon">🔍 Ampliar Captura</span>
                             </div>
